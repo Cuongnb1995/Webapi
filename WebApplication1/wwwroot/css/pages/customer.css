@@ -1,0 +1,442 @@
+@font-face {
+    font-family: Tahoma_Regular;
+    src: url(../../content/fonts/Tahoma_Regular.woff);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Tahoma_Regular;
+    font-size: 13px;
+}
+header {
+    background-color: rgb(9, 115, 185);
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    width: 255px;
+    background-color: rgb(9, 115, 185);
+}
+
+.content {
+    width: calc(100% - 255px);
+    padding: 9px;
+}
+
+.content-top {
+    height: 40px;
+}
+
+.content-main {
+    height: calc(100vh - 113px);
+}
+
+.logo {
+    display: flex;
+    width: 255px;
+    height: 100%;
+}
+
+.logo .icon-category {
+    background-image: url(../../content/images/icon-left-header.png);
+    width: 50px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo .icon-logo {
+    background-image: url(../../content/images/logo-text.png);
+    height: 100%;
+    width: calc(100% - 50px);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 255px);
+    align-items: center;
+}
+
+
+.header-main-right {
+    display: flex;
+    align-items: center;
+}
+.icon-support{
+    width: 60px;
+    height: 50px;
+    background-image: url(../../content/images/ic_support.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.icon-global {
+    margin-left: 10px;
+    font-size: 28px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.hearder-account{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.icon-account{
+    width: 34px;
+    height: 34px;;
+    background-color: rgb(255, 255, 255);
+    margin-right: 5px;
+    border-radius: 50%;
+    background-image: url(../../content/images/EmployeeImage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.account-name{
+    color: white;
+}
+.account-arrowdown{
+    margin-left: 4px;
+    width: 10px;
+    color: white;
+    height: 100%;
+}
+.header-main select{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(0, 80, 130);
+    color: rgb(255, 255, 255);
+    padding-left: 4px;
+    border: none;
+}
+
+.header-main select option{
+    padding-bottom: 8px;
+}
+
+.menu{
+    border-top: 1px solid rgb(23, 138, 214);
+}
+.menu .menu-main {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid rgb(3, 87, 142);
+}
+.menu .menu-main li {
+    border-bottom: 1px solid #03578e;
+}
+
+.menu .menu-main li:hover {
+    background-color:#eb7728;
+}
+.menu-main li a {
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    display: block;
+    padding-left: 15px;;
+}
+
+.icon-menu-detail {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+
+.icon-tq{
+    background-image: url(../../content/images/iconMenu.png);
+}
+.icon-bc{
+    background-image: url(../../content/images/iconMenu.png);
+    background-position: 0px -190px;
+}
+.icon-bh{
+    background-image: url(../../content/images/iconMenu.png);
+    background-position: 0px -77px;
+}
+.icon-dm{
+    background-image: url(../../content/images/iconMenu.png);
+    background-position: 0px -153px;
+}
+.icon-qtm{
+    background-image: url(../../content/images/iconMenu.png);
+    background-position: 0px -77px;
+}
+.icon-km{
+    background-image: url(../../content/images/iconMenu.png);
+    background-position: 0px -116px;
+}
+
+.content-top span {
+    display: inline-block;
+    line-height: 40px;
+    font-size: 22px;
+}
+
+.content-top span:not(:first-child) {
+    font-size: 16px;
+    color: rgb(0, 114, 188);;
+}
+
+.content-main{
+    border: 1px solid #ccc;;
+}
+.content-main .toolbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #ededed;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.content-main .toolbar button {
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 4px 6px;
+}
+.content-main .toolbar button:hover {
+    border: 1px solid #1e32d0;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+button[disabled] {
+    pointer-events: none;
+}
+
+.icon-toolbar {
+    display: inline-block;
+    width: 22px;
+    height: 16px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+
+.icon-add{
+    background-image: url(../../content/images/IconSprite.png);
+    background-position: 0px -2415px;
+}
+
+.icon-copy{
+    background-image: url(../../content/images/IconSprite.png);
+    background-position: 0px -1888px;
+}
+
+.icon-edit{
+    background-image: url(../../content/images/IconSprite.png);
+    background-position: 0px -1872px;
+}
+
+.icon-delete{
+    background-image: url(../../content/images/IconSprite.png);
+    background-position: 0px -2048px;
+}
+
+.icon-save{
+    background-image: url(../../content/images/IconSprite.png);
+    background-position: 0px -2586px;
+}
+
+.gird th{
+    background: #ededed;
+    position: sticky;
+    top: 0px;
+}
+
+.gird table, th, td  {
+    border-collapse: collapse;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    font-weight: normal;
+    line-height: 25.8px;
+    text-align: center;
+}
+
+.gird tr:hover{
+    background: #ededed;
+    cursor: pointer;
+}
+
+.row-selected {
+    background: #ededed;
+}
+
+.form-dialog-content {
+    border-radius: 8px;
+    padding: 4px;
+    background-color: #0072bc;
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dialog-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: .4;
+}
+
+.dialog {
+    background-color: white;
+    padding: 4px;
+}
+
+.form-header{
+    background-color: #0072bc;
+    color: white;
+    padding: 0px 5px 8px 8px;
+}
+.dialog p {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 8px;
+}
+.form-header-close{
+    border-radius: 50%;
+    padding: 0px 5px 2px 5px;
+    float: right;
+    background-color: #ffffff;
+    color: #0072bc;
+    background-image: url(../../content/images/cancel.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.form-header-close:hover{
+    color: #ff0000;
+    cursor: pointer;
+
+}
+.form-dialog-content label{
+    width: 140px;
+    display: inline-block;
+}
+.form-group{
+    padding: 2px;
+}
+
+.dialog-box-1{
+    display: flex;
+    justify-content: space-between;
+}
+.form-right{
+    width: 140px;
+}
+.form-left{
+    width: 80%;
+}
+
+.form-left input{
+    width: 70%;
+    padding: 2px;
+}
+.form-dialog{
+    display: none;
+}
+.form-dialog input, .form-dialog select{
+    padding: 0px 6px;
+    height: 24px;
+    box-shadow: none;
+    border: 1px solid #cccc;
+}
+
+.form-center input{
+    width: 78%;
+    padding: 2px;
+}
+
+.form-dialog input:focus, .form-center input:focus {
+    border: 1px solid #0071c1;
+    outline-offset: unset;
+    outline: none;
+}
+
+.form-group-box-2, .fg-birthday, .fg-gender, .fg-cmt, .fg-date, .form-tax, .form-salary, .fg-datejoin, .fg-status {
+    display: flex;
+    align-items: center;
+}
+
+.form-center .form-group select{
+    width: 78%;
+}
+.form-footer{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dedede;
+    margin-top: 10px;
+}
+.form-footer button{
+    background-color: #fff;
+    border-width: 1px;
+    border-color: #F0F0F0;
+    border-style: solid;
+    padding: 6px 8px;
+}
+
+.form-footer button:hover{
+    border-color: #0071c1;
+    background-image: -webkit-linear-gradient(top,#eff0ec,#e1f2e9);
+    outline: none;
+    cursor: pointer;
+}
+
+.icon-help{
+    background-image: url(../../content/images/IconSprite.png);
+    background-position: 0px -1600px;
+
+}
+
+.icon-save{
+    background-image: url(../../content/images/IconSprite.png);
+    background-position: 0px -768px;
+
+}
+
+.icon-saveadd{
+    background-image: url(../../content/images/IconSprite.png);
+    background-position: 0px -736px;
+
+}
+
+.icon-cancel{
+    background-image: url(../../content/images/IconSprite.png);
+    background-position: 0px -1952px;
+
+}
+#pager li {
+    list-style: none;
+    padding: 4px 6px;
+}
+#pager li a {
+    text-decoration: none;
+}
+#pager li:hover a {
+    color: green;
+    cursor: pointer;
+}
+

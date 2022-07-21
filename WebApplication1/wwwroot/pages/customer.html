@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/pages/customer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="icon-category">
+            </div>
+            <div class="icon-logo">
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="header-main-left">
+                <select>
+                    <option>Nhà hàng biển Đông</option>
+                    <option>Nhà hàng biển Tây</option>
+                </select>
+            </div>
+            <div class="header-main-right">
+                <div class="select-language">
+                    <select>
+                        <option>Tiếng Việt (Tiếng Việt)</option>
+                        <option>English (Tiếng Anh)</option>
+                        <option>Deutsch (Tiếng Đức)</option>
+                        <option>中文 (Tiếng Trung)</option>
+                    </select>
+                </div>
+                <div class="icon-global">
+                    <i class="fa-solid fa-earth-americas"></i>
+                </div>
+                <div class="icon-support">
+                </div>
+                <div class="hearder-account">
+                    <div class="icon-account">
+                    </div>
+                    <div class="account-name">
+                        Nguyễn Bá Cường
+                    </div>
+                    <div class="account-arrowdown">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="menu">
+            <ul class="menu-main">
+                <li><a href=""><span class="icon-menu-detail icon-tq"></span><span>Tổng quan</span></a></li>
+                <li><a href=""><span class="icon-menu-detail icon-bc"></span>Báo cáo</a></li>
+                <li><a href=""><span class="icon-menu-detail icon-bh"></span>Bán hàng</a></li>
+                <li><a href=""><span class="icon-menu-detail icon-dm"></span>Danh mục</a></li>
+                <li><a href=""><span class="icon-menu-detail icon-qtm"></span>Quỹ tiền mặt</a></li>
+                <li><a href=""><span class="icon-menu-detail icon-km"></span>Khuyến mại</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content-top">
+                <span>Danh mục</span>
+                <span><i class="fa-solid fa-caret-right"></i></span>
+                <span>Nhân viên</span>
+            </div>
+            <div class="content-main">
+                <div class="toolbar">
+                    <button id="btn-add"><span class="icon-toolbar icon-add"></span><span>Thêm</span></button>
+                    <button disabled><span class="icon-toolbar icon-copy"></span><span>Nhân bản</span></button>
+                    <button id="btn-edit"><span class="icon-toolbar icon-edit"></span><span>Sửa</span></button>
+                    <button id="btn-delete"><span class="icon-toolbar icon-delete"></span><span>Xóa</span></button>
+                    <button id="btn-save"><span class="icon-toolbar icon-save"></span><span>Nạp</span></button>
+                </div>
+                <div class="gird" style="overflow-y: auto; height: 92%;">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <th width="100px">Mã nhân viên</th>
+                                <th>Tên nhân viên</th>
+                                <th width="100px">Giới tính</th>
+                                <th width="100px">Ngày sinh</th>
+                                <th>Số điện thoại</th>
+                                <th>Email</th>
+                                <th>Vị trí</th>
+                                <th>Phòng ban</th>
+                                <th>Mức lương</th>
+                                <th>Tình trạng công việc</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="paging" style="padding: 2px 4px;">
+                    <ul id="pager" style="display: flex; justify-content: center;">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-dialog">
+        <div class="dialog-modal"></div>
+        <div class="form-dialog-content">
+            <div class="form-header">
+                <span>Thông tin nhân viên</span>
+                <span class="form-header-close">x</span>
+            </div>
+            <div class="dialog">
+                <p>Thông tin chung</p>
+                <div class="dialog-box-1">
+                    <div class="form-left">
+                        <div class="form-group">
+                            <label for="">Mã nhân viên</label>
+                            <input type="text" id="textEmployeeCode">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Tên nhân viên</label>
+                            <input type="text" id="textFullName">
+                        </div>
+                        <div class="form-group form-group-box-2">
+                            <div class="fg-birthday">
+                                <label for="" style="width: 144px;">Ngày sinh</label>
+                                <input type="date" style="width: 160px;" id="textDateOfBirth">
+                            </div>
+                            <div class="fg-gender">
+                                <label for="" style="width: 58px; padding-left: 6px;">Giới tính</label>
+                                <select name="" id="textGender" style="width: 160px;">
+                                    <option value="1">Nam</option>
+                                    <option value="2">Nữ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="email" id="textEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="">ĐT di động</label>
+                            <input type="tel" id="textPhoneNumber">
+                        </div>
+                        <div class="form-group form-group-box-2">
+                            <div class="fg-cmt">
+                                <label for="" style="width: 144px;">Số CMT/HC</label>
+                                <input type="tel" style="width: 160px;" id="textCitizenIdentityCode">
+                            </div>
+                            <div class="fg-date">
+                                <label for="" style="width: 64px; padding-left: 4px;">Ngày cấp</label>
+                                <input type="date" style="width: 155px;" id="textCitizebIdentityDate">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-right">
+                        <button class="btn-select-avatar">...</button>
+                        <button class="btn-remove-avatar">x</button>
+                        <span>Chỉ được upload tệp .jpg .jpeg, .png, .gif</span>
+                    </div>
+                </div>
+
+                <div class="form-center">
+                    <div class="form-group">
+                        <label for="">Nơi cấp CMND</label>
+                        <input type="text" id="textCitizebIdentityPlace">
+                    </div>
+                    <p>Thông tin công việc</p>
+                    <div class="form-group">
+                        <label for="">Vị trí</label>
+                        <select name="" id="textPositionId">
+                            <option value="1">Giám đốc trung tâm</option>
+                            <option value="2">Trưởng phòng</option>
+                            <option value="3">Nhân viên</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Phòng ban</label>
+                        <select name="" id="textDepartmentId">
+                            <option value="1">Phòng đào tạo</option>
+                            <option value="2">Phòng nghiên cứu</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-box-2">
+                        <div class="form-tax">
+                            <label for="" style="width: 144px;">Mã số thuế cá nhân</label>
+                            <input type="tel" style="width: 200px;" id="textSelfTaxCode">
+                        </div>
+                        <div class="form-salary">
+                            <label for="" style="padding-left: 68px;">Mức lương</label>
+                            <input type="text" style="width: 190px;" id="textSalary">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-box-2">
+                        <div class="fg-datejoin">
+                            <label for="" style="width: 144px;">Ngày gia nhập</label>
+                            <input type="date" style="width: 200px;" id="textJoinDate">
+                        </div>
+                        <div class="fg-status">
+                            <label for="" style="padding-left: 68px;">Tình trạng</label>
+                            <select name="" id="textWorkState" style="width: 190px;">
+                                <option value="1">Đang làm việc</option>
+                                <option value="2">Đã nghỉ việc</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <div class="form-footer-left">
+                        <button><span class="icon-toolbar icon-help"></span>Giúp</button>
+                    </div>
+                    <div class="form-footer-right">
+                        <button id="btnSaveDetail"><span class="icon-toolbar icon-save"></span>Cất</button>
+                        <button id="btnSaveAddDetail"><span class="icon-toolbar icon-saveadd"></span>Cất và thêm</button>
+                        <button id="ffr-btn-cancel"><span class="icon-toolbar icon-cancel"></span>Hủy bỏ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/customer.js"></script>
+    <script src="/js/common.js"></script>
+
+</body>
+</html>
