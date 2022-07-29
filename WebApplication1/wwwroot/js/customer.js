@@ -204,6 +204,7 @@ class CustomerJS {
             });
         }
         else {
+            employee.employeeId = parseInt(rowId);
             $.ajax({
                 url: "/api/Employee/" + rowId,
                 method: "PUT",

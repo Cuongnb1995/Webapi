@@ -10,6 +10,7 @@ namespace WebApplication1.Models
         public DbSet<Position> Position { get; set; }
         public DbSet<Department> Department { get; set; }
         public DbSet<Employee> Employee { get; set; }
+        public DbSet<UserInfo>? UserInfos { get; set; }
 
     }
 }
